@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Hello, world!</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">    
+  </head>  
+  <body>
+        <div class="container container-fluid">
+                <form>
+
+                    <!-- 1.Banner's Name -->
+                  <div class="form-group">
+                    <label for="banner-name">ชื่อแบนเนอร์</label>
+                    <input type="text" class="form-control" id="banner-name" placeholder="ชื่อแบนเนอร์">
+                  </div>
+
+                  <!-- 2.Project's Name -->
+                  <div class="form-group">
+                      <label for="project-name">ชื่อโครงการหรือลูกค้า</label>
+                      <input type="text" class="form-control" id="Project-name" placeholder="ชื่อโครงการหรือลูกค้า">
+                    </div>
+
+                    <!-- 3.Impression-->
+                    <div class="form-group">
+                        <label for="impression">จำนวน Impression</label>
+                        <input type="text" class="form-control" id="impression" placeholder="จำนวน Impression" aria-describedby="impressionHelp">
+                        <small class="text-muted" id="impressionHelp">Impression คือจำนวนผู้รับชมไม่ใช่จำนวน click</small>
+                      </div>
+
+                    <!-- 4. Duration -->
+                    <div class="form-group">
+                            <label for="duration">ระยะเวลา</label>
+                            <input type="text" class="form-control" id="duration" placeholder="ระยะเวลา" aria-describedby="durationHelp">
+                            <small class="text-muted" id="durationHelp">ระบุเป็นจำนวนวัน อาทิเช่น 7 วัน, 14 วัน, 30 วัน, 365 วันเป็นต้น.</small>
+                    </div>
+
+                    <!-- 5. Date start&end -->
+                    <div class="form-group">
+                        <label for"date-start">วันที่เริ่มต้น</label>                           <input class="form-control" type="datetime-local" placeholder="วันที่เริ่มต้น" id="date-start">              
+                    </div>
+                    <div class="form-group">
+                            <label for"date-end">วันที่สิ้นสุด</label>                           <input class="form-control" type="datetime-local" placeholder="วันที่สิ้นสุด" id="date-end">           
+                    </div>
+                    
+                    <!-- 6. Website-->
+                    <div class="form-group">
+                        <label for"website">เว็บไซต์ที่ต้องการลง Banner</label>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input">
+                              1. เว็บไซต์ ก.
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                              <input type="checkbox" class="form-check-input">
+                             2. เว็บไซต์ ข.
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input">
+                            3. เว็บไซต์ ค.
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input">
+                            4. เว็บไซต์ ง.
+                            </label>
+                                </div>
+                                <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input">
+                                              5. เว็บไซต์ จ.
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                              <input type="checkbox" class="form-check-input">
+                                            6. เว็บไซต์ ฉ.
+                                            </label>
+                                        </div>
+                    </div>
+                    
+                    <!-- 7. Input File Upload -->
+                    <div class="form-group">
+                            <label for="banner-input">อัพโหลด Banner ที่นี่</label>
+                            <input type="file" multiple accept="image/*" class="form-control-file" id="banner-input" aria-describedby="fileHelp">
+                            <small id="fileHelp" class="form-text text-muted">เฉพาะไฟล์รูปภาพ jpg, gif, png และ jpeg เท่านั้น สามารถอัพได้มากกว่า 1 ไฟล์พร้อมกัน</small>
+                          </div>
+                <!--                                          
+                  <div class="form-group">
+                    <label for="exampleSelect1">Example select</label>
+                    <select class="form-control" id="exampleSelect1">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                     
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleSelect2">Example multiple select</label>
+                    <select multiple class="form-control" id="exampleSelect2">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div> 
+                -->
+
+                <!-- 8. Embed Youtube&Java&Short Note -->
+
+                    <div class="form-group">
+                        <label for="youtube">Embed Youtube</label>
+                        <textarea class="form-control" id="youtube" rows="3" placeholder="กรอก โค้ด embed youtube ที่นี่"></textarea>
+                     </div>
+
+                    <div class="form-group">
+                        <label for="javascript">Code JavaScript</label>
+                        <textarea class="form-control" id="javascript" rows="3" placeholder="กรอก โค้ด Code JavaScript ที่นี่"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                            <label for="note">หมายเหตุ</label>
+                            <textarea class="form-control" id="note" rows="3" placeholder="สำหรับคำอธิบายเพิ่มเติม/หมายเหตุ"></textarea>
+                    </div>
+                    
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+                </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
+</html>
